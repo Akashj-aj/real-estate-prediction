@@ -5,7 +5,7 @@ import os
 logging.basicConfig(level=logging.INFO)
 
 # Load the cleaned data
-df = pd.read_csv("data/cleaned_data.csv")
+df = pd.read_csv("data/folder/cleaned_data.csv")
 
 # Rename for simplicity
 df.rename(columns={
