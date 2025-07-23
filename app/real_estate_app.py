@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', 'sans-serif']
 
+# Define feature names for consistent use throughout the app
+FEATURE_NAMES = ['transaction_year', 'house_age', 'distance_to_mrt', 'num_convenience_stores', 'latitude', 'longitude']
+
 
 # ---------------------------
 # Load custom CSS
@@ -149,8 +152,9 @@ if predict_btn:
     if distance_to_mrt < 0:
         st.error("ERROR: Invalid MRT distance parameter")
     else:
-        # Prepare input data (6 features, matching model)
-        input_data = np.array([[transaction_year, house_age, distance_to_mrt, num_convenience_stores, latitude, longitude]])
+        # Prepare input data with proper feature names (matching training data)
+        input_data = pd.DataFrame([[transaction_year, house_age, distance_to_mrt, num_convenience_stores, latitude, longitude]], 
+                                columns=FEATURE_NAMES)
         input_scaled = scaler.transform(input_data)
         prediction = model.predict(input_scaled)
         st.success(f"Prediction Complete: ${prediction[0]:,.2f} NT$/ping")
@@ -181,11 +185,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 try:
     importances = model.feature_importances_
-    features = ['transaction_year', 'house_age', 'distance_to_mrt', 'num_convenience_stores', 'latitude', 'longitude']
-    if len(importances) != len(features):
-        st.warning(f"Matrix dimension mismatch: {len(features)} vs {len(importances)}")
+    if len(importances) != len(FEATURE_NAMES):
+        st.warning(f"Matrix dimension mismatch: {len(FEATURE_NAMES)} vs {len(importances)}")
     else:
-        importance_df = pd.DataFrame({'Feature': features, 'Importance': importances}).sort_values(by='Importance', ascending=True)
+        importance_df = pd.DataFrame({'Feature': FEATURE_NAMES, 'Importance': importances}).sort_values(by='Importance', ascending=True)
         
         # Create modern dynamic plot
         fig, ax = plt.subplots(figsize=(12, 7))
