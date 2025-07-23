@@ -6,6 +6,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Configure matplotlib fonts to avoid font warnings
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', 'sans-serif']
+
 
 # ---------------------------
 # Load custom CSS
@@ -199,9 +203,9 @@ try:
             # Add gradient effect
             bar.set_alpha(0.9)
         
-        ax.set_xlabel("Importance Score", fontsize=14, color='#f1f5f9', fontfamily='Source Sans Pro', fontweight='600')
+        ax.set_xlabel("Importance Score", fontsize=14, color='#f1f5f9', fontfamily='sans-serif', fontweight='600')
         ax.set_title("Feature Importance Analysis", fontsize=18, color='#f1f5f9', 
-                    fontweight='800', fontfamily='Montserrat', pad=25)
+                    fontweight='800', fontfamily='sans-serif', pad=25)
         
         # Modern clean styling
         ax.tick_params(colors='#e2e8f0', labelsize=11)
