@@ -90,6 +90,7 @@ with st.sidebar:
     <div style='background: rgba(99, 102, 241, 0.15); padding: 1.4rem; border-radius: 18px; border: 1px solid rgba(99, 102, 241, 0.4); margin-bottom: 1rem; backdrop-filter: blur(15px);'>
         <div style='color: #6366f1; font-size: 1.2rem; margin-bottom: 0.8rem; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;'><strong>How to Use:</strong></div>
         <ol style='color: #f1f5f9; font-size: 1rem; line-height: 1.8; font-family: "Source Sans Pro", sans-serif; font-weight: 500;'>
+             Note: This model is trained on Taiwan real estate data. Predictions and price units (NT/ping) are specific to the Taiwan market
             <li>Enter property details in the form</li>
             <li>Click "Predict Price" to get valuation</li>
             <li>Review the predicted price result</li>
