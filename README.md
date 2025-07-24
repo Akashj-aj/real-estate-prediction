@@ -9,6 +9,7 @@
 ---
 
 ## Project Overview
+This project was developed as part of a **6-week internship with InternPro** under the **AI/ML domain**.  
 This project predicts **real estate prices (NT$/ping)** based on features such as transaction year, house age, distance to MRT stations, number of nearby convenience stores, and coordinates.  
 It includes **data preprocessing, model building, evaluation, and a user-friendly web app** built with Streamlit.
 
@@ -22,7 +23,6 @@ The goal is to help buyers, sellers, and analysts make informed property decisio
 - Multiple ML models with performance comparison
 - Best model selection using RMSE and R²
 - Streamlit app for real-time prediction
-- Logging of prediction history
 - Feature importance visualization
 
 ---
