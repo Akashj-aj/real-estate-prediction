@@ -83,6 +83,7 @@ See the full list of ideas in **[future_scope.md](future_scope.md)**.
 
 ## **Team Members**
 This project was developed collaboratively by:
+- **Akash J**
 - **Rajana Durga Pavan Kumar**
 - **M. Surya Teja**
 - **Borigi Jyothiradhithya**
