@@ -12,7 +12,7 @@ The project includes **data cleaning, feature engineering, model building, evalu
 - **Model Building:** Training multiple machine learning models including Linear Regression, Decision Tree, Random Forest, XGBoost, and Tuned Random Forest.
 - **Model Comparison:** Metrics such as RMSE and R² used to select the best-performing model.
 - **Streamlit App:** Interactive web app to input property details and get predictions.
-- **Logging:** Predictions made via the app are stored in `logs/predictions.csv`.
+
 
 ---
 
