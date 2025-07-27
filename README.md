@@ -81,7 +81,35 @@ The application is deployed using Streamlit Cloud:
 🔗 [Real Estate Price Predictor (Live App)](https://real-estate-prediction-1.streamlit.app)
 
 ---
+# real-estate-prediction
 
+## Model Performance
+
+### Final Model Metrics
+- **Model Type**: Random Forest Regressor
+- **RMSE**: [Will be filled after running the script above]
+- **R² Score**: [Will be filled after running the script above]
+- **Mean Absolute Error**: [Will be filled after running the script above]
+
+### Model Details
+- **Algorithm**: Random Forest Regressor
+- **Features Used**: 
+  - transaction_year
+  - house_age
+  - distance_to_mrt
+  - num_convenience_stores
+  - latitude
+  - longitude
+- **Sample Prediction**: 53.93 (price per unit area)
+
+### Model Files
+- `models/final_model.pkl`: Complete model package with trained RandomForest, feature columns, and target column
+- `models/model_metrics.json`: Detailed performance metrics
+- `week4_model_building.ipynb`: Complete model building process
+
+### Usage
+
+---
 ## Future Scope
 - Add support for LightGBM and CatBoost models
 - Integrate real-time data APIs
