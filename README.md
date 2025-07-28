@@ -86,13 +86,12 @@ The application is deployed using Streamlit Cloud:
 ## Model Performance
 
 ### Final Model Metrics
-- **Model Type**: Random Forest Regressor
-- **RMSE**: [Will be filled after running the script above]
-- **R² Score**: [Will be filled after running the script above]
-- **Mean Absolute Error**: [Will be filled after running the script above]
+- **Model Type**:Tuned Random Forest
+- **RMSE**: 5.58 
+- **R² Score**: 0.81
 
 ### Model Details
-- **Algorithm**: Random Forest Regressor
+- **Algorithm**: Tuned Random Forest
 - **Features Used**: 
   - transaction_year
   - house_age
@@ -103,11 +102,8 @@ The application is deployed using Streamlit Cloud:
 - **Sample Prediction**: 53.93 (price per unit area)
 
 ### Model Files
-- `models/final_model.pkl`: Complete model package with trained RandomForest, feature columns, and target column
-- `models/model_metrics.json`: Detailed performance metrics
-- `week4_model_building.ipynb`: Complete model building process
-
-
+- `models/final_model.pkl`: Complete model package with trained Tuned Random Forest, feature columns, and target column
+- 
 ---
 ## Future Scope
 - Add support for LightGBM and CatBoost models
