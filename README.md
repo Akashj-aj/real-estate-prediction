@@ -81,7 +81,7 @@ The application is deployed using Streamlit Cloud:
 🔗 [Real Estate Price Predictor (Live App)](https://real-estate-prediction-1.streamlit.app)
 
 ---
-# real-estate-prediction
+
 
 ## Model Performance
 
@@ -107,7 +107,6 @@ The application is deployed using Streamlit Cloud:
 - `models/model_metrics.json`: Detailed performance metrics
 - `week4_model_building.ipynb`: Complete model building process
 
-### Usage
 
 ---
 ## Future Scope
