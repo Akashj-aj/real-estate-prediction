@@ -102,8 +102,7 @@ The application is deployed using Streamlit Cloud:
 - **Sample Prediction**: 53.93 (price per unit area)
 
 ### Model Files
-- `models/final_model.pkl`: Complete model package with trained Tuned Random Forest, feature columns, and target column
-- 
+- `models/final_model.pkl`: Complete model package with trained Tuned Random Forest, feature columns, and target column.
 ---
 ## Future Scope
 - Add support for LightGBM and CatBoost models
